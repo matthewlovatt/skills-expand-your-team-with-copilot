@@ -187,8 +187,44 @@ section h3 {
   margin-top: auto;
   padding-top: 10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Share buttons */
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
   justify-content: center;
 }
+
+.share-label {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.share-btn {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1.4;
+}
+
+.share-btn:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary-dark);
+}
+
+.share-native { font-size: 0.85rem; }
 
 /* Activity Tag */
 .activity-tag {
